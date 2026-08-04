@@ -1,0 +1,652 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#040612" />
+
+    <!-- Primary Meta Tags -->
+    <title>Samaneti Ashwini | AI Developer & Full-Stack Engineer</title>
+    <meta name="title" content="Samaneti Ashwini | AI Developer & Full-Stack Engineer" />
+    <meta name="description" content="Portfolio of Samaneti Ashwini - AI Developer and Full-Stack Engineer specializing in building scalable web applications and intelligent systems." />
+    <meta name="author" content="Samaneti Ashwini" />
+    <meta name="keywords" content="Samaneti Ashwini, Ashwini, AI Developer, Full-Stack Developer, Web Developer, Django, Python, Portfolio, Software Engineer, VJIT" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://github.com/SamanetiAshwini" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/SamanetiAshwini" />
+    <meta property="og:title" content="Samaneti Ashwini | AI Developer & Full-Stack Engineer" />
+    <meta property="og:description" content="Portfolio of Samaneti Ashwini - AI Developer and Full-Stack Engineer specializing in building scalable web applications and intelligent systems." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/SamanetiAshwini" />
+    <meta property="twitter:title" content="Samaneti Ashwini | AI Developer & Full-Stack Engineer" />
+    <meta property="twitter:description" content="Portfolio of Samaneti Ashwini - AI Developer and Full-Stack Engineer specializing in building scalable web applications and intelligent systems." />
+
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="{% static 'projects/css/styles.css' %}" />
+</head>
+
+<body>
+    <!-- Background Canvas and Ambient Glow Overlay -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="cyber-grid"></div>
+    <div class="radial-glow-1"></div>
+    <div class="radial-glow-2"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#hero" class="logo">SA<span>.</span></a>
+            <nav>
+                <a href="#about" class="active">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#workshops">Workshops</a>
+                <a href="#contact" class="btn-contact-nav">Let's Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-mono">Hello World, I'm</span>
+                <h1 class="hero-title">Samaneti <span>Ashwini</span></h1>
+                <div class="hero-subtitle">
+                    <span id="typing-text" data-words='["AI Developer", "Full-Stack Engineer", "Creative Technologist", "Computer Vision Enthusiast"]'></span>
+                    <span class="typing-cursor"></span>
+                </div>
+                <p class="hero-description">
+                    Aspiring Software Engineer with a strong foundation in Full Stack Development and Artificial Intelligence. Experienced in building scalable web applications and intelligent systems using modern technologies.
+                </p>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Hyderabad, Telangana, India</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <span>B.Tech - Artificial Intelligence (2022 - 2026)</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        <span>View Projects</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glowing-globe">
+                    <!-- High-tech SVG Neural Wireframe Graphic -->
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="rgba(6, 182, 212, 0.15)" stroke-width="0.7" fill="none"/>
+                        <circle cx="50" cy="50" r="30" stroke="rgba(99, 102, 241, 0.15)" stroke-width="0.7" fill="none"/>
+                        <!-- Orbital Node paths -->
+                        <path d="M50 10 A40 40 0 1 0 50 90 A30 40 0 1 0 50 10" stroke="rgba(99, 102, 241, 0.3)" stroke-width="0.5" fill="none" />
+                        <path d="M10 50 A40 40 0 1 0 90 50 A40 30 0 1 0 10 50" stroke="rgba(6, 182, 212, 0.3)" stroke-width="0.5" fill="none" />
+                        <!-- Core Node -->
+                        <circle cx="50" cy="50" r="4" fill="url(#core-grad)" />
+                        <!-- Peripheral nodes -->
+                        <circle cx="50" cy="10" r="2" fill="#06b6d4" />
+                        <circle cx="50" cy="90" r="2" fill="#06b6d4" />
+                        <circle cx="10" cy="50" r="2" fill="#6366f1" />
+                        <circle cx="90" cy="50" r="2" fill="#6366f1" />
+                        <circle cx="21" cy="21" r="1.5" fill="#d946ef" />
+                        <circle cx="79" cy="79" r="1.5" fill="#d946ef" />
+                        <circle cx="21" cy="79" r="1.5" fill="#06b6d4" />
+                        <circle cx="79" cy="21" r="1.5" fill="#6366f1" />
+                        <!-- Lines connecting nodes -->
+                        <line x1="50" y1="10" x2="50" y2="50" stroke="rgba(6, 182, 212, 0.2)" stroke-width="0.4" />
+                        <line x1="10" y1="50" x2="50" y2="50" stroke="rgba(99, 102, 241, 0.2)" stroke-width="0.4" />
+                        <line x1="21" y1="21" x2="50" y2="50" stroke="rgba(217, 70, 239, 0.2)" stroke-width="0.4" />
+                        <line x1="79" y1="79" x2="50" y2="50" stroke="rgba(217, 70, 239, 0.2)" stroke-width="0.4" />
+                        <defs>
+                            <radialGradient id="core-grad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#06b6d4" />
+                                <stop offset="100%" stop-color="#6366f1" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <span class="section-mono">01. Profile Summary</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-info-col">
+                <div class="about-text">
+                    <p>
+                        I am an <span>Aspiring Software Engineer</span> focusing on Full Stack Development and Artificial Intelligence. Currently pursuing a B.Tech in Artificial Intelligence, I enjoy bridging the gap between robust software engineering practices and advanced intelligent models.
+                    </p>
+                    <p>
+                        My experience spans developing interactive full-stack applications with <span>Django</span> and <span>Flask</span>, as well as integrating advanced <span>Computer Vision (OpenCV)</span>, <span>Natural Language Processing (NLP)</span>, and conversational APIs. I seek to apply analytical and problem-solving skills to build real-world engineering solutions.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="glass-card stat-card">
+                        <span class="stat-num">8.34</span>
+                        <span class="stat-label">CGPA</span>
+                        <span class="stat-desc">Academic excellence at VJIT</span>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <span class="stat-num">4+</span>
+                        <span class="stat-label">Core Projects</span>
+                        <span class="stat-desc">SMRITI, SentiBeats, IoT, Solar Grass Cutter</span>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Certifications</span>
+                        <span class="stat-desc">AWS, Cisco, IBM, Hexart</span>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <span class="stat-num">SIH</span>
+                        <span class="stat-label">Hackathon</span>
+                        <span class="stat-desc">National Innovation Level</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-photo-wrapper">
+                <div class="about-photo">
+                    <img src="{% static 'projects/images/profile_2.jpg' %}" alt="Samaneti Ashwini Profile Photo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-header">
+            <span class="section-mono">02. Academic Background</span>
+            <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card timeline-content">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2022 - 2026</span>
+                        <span class="timeline-place">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Hyderabad, India
+                        </span>
+                    </div>
+                    <h3 class="timeline-title">Vidya Jyothi Institute of Technology</h3>
+                    <h4 class="timeline-subtitle">B.Tech – Artificial Intelligence</h4>
+                    <ul class="timeline-details">
+                        <li>Focus on Artificial Intelligence, Machine Learning, Deep Learning, and Computer Vision</li>
+                        <li>Maintaining an overall cumulative GPA of <strong>8.34</strong></li>
+                        <li>Engaged in hands-on laboratories, technical workshops, and hackathons</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card timeline-content">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <span class="timeline-place">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Hyderabad, India
+                        </span>
+                    </div>
+                    <h3 class="timeline-title">Sri Chaitanya Jr College</h3>
+                    <h4 class="timeline-subtitle">MPC (Mathematics, Physics, Chemistry)</h4>
+                    <ul class="timeline-details">
+                        <li>Completed Intermediate Education with MPC specialization</li>
+                        <li>Graduated with a grade of <strong>73.1%</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="glass-card timeline-content">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2020</span>
+                        <span class="timeline-place">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Hyderabad, India
+                        </span>
+                    </div>
+                    <h3 class="timeline-title">Infant Jesus International School</h3>
+                    <h4 class="timeline-subtitle">Secondary Education</h4>
+                    <ul class="timeline-details">
+                        <li>Completed Secondary School Certificate (SSC) curriculum</li>
+                        <li>Achieved a perfect cumulative GPA of <strong>10/10</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-mono">03. Practical Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            {% for project in projects %}
+            <div class="glass-card project-card">
+                <div class="project-icon-row">
+                    <!-- Folder SVG Icon -->
+                    <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <div class="project-actions-links">
+                        {% if project.github_link %}
+                        <a href="{{ project.github_link }}" target="_blank" class="project-github-icon" aria-label="GitHub Repository">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                        {% endif %}
+                        {% if project.live_demo %}
+                        <a href="{{ project.live_demo }}" target="_blank" class="project-github-icon" aria-label="Live Demo">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <h3 class="project-title">{{ project.title }}</h3>
+
+                <ul class="project-description-list">
+                    {% for bullet in project.description_bullets %}
+                        <li>{{ bullet }}</li>
+                    {% empty %}
+                        <li>{{ project.description }}</li>
+                    {% endfor %}
+                </ul>
+
+                <div class="project-tags">
+                    {% for tech in project.tech_list %}
+                        <span class="tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% empty %}
+            <div class="glass-card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">No projects added yet. Go to the <a href="/admin" style="color: var(--accent-cyan); text-decoration: underline;">Django Admin</a> to add projects!</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="section-header">
+            <span class="section-mono">04. Research & Publications</span>
+            <h2 class="section-title">Publications</h2>
+        </div>
+        <div class="publications-container">
+            <div class="glass-card publication-card">
+                <div class="pub-badge-row">
+                    <span class="pub-badge">Conference Paper</span>
+                    <span class="pub-venue">CIGAI - 2026</span>
+                    <span class="pub-venue">Springer</span>
+                </div>
+                <div class="pub-content-grid">
+                    <div class="pub-details">
+                        <h3 class="pub-title">Saaarthi: A Smriti- A Knowledge-Driven AI Robot for Intelligence Communication and Assistance</h3>
+                        <p class="pub-authors">By <strong>Samaneti Ashwini</strong></p>
+                        <p class="pub-desc">
+                            Research paper presented and published at the <em>Second International Conference on Mathematical Modeling in Computational Intelligence and Generative AI (CIGAI 2026)</em>. In collaboration with international publishing partner <strong>Springer</strong>, this paper explores knowledge-driven AI architectures for interactive communication robots.
+                        </p>
+                        <div class="pub-meta-list">
+                            <div class="pub-meta-item">
+                                <strong>Venue:</strong> Aditya Institute of Technology and Management (AITAM), Tekkali, Andhra Pradesh, India
+                            </div>
+                            <div class="pub-meta-item">
+                                <strong>Date:</strong> July 16 - 17, 2026
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pub-certificate-preview">
+                        <img src="{% static 'projects/images/cigai_certificate.jpg' %}" alt="CIGAI 2026 Presentation Certificate" />
+                        <div class="certificate-overlay">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            <span>View Full Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-mono">04. Technical Capabilities</span>
+            <h2 class="section-title">Skills & Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <h3>Programming</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">Python (Core)</span>
+                    <span class="skill-badge">Java (Basic)</span>
+                    <span class="skill-badge">C (Fundamentals)</span>
+                </div>
+            </div>
+
+            <!-- Full Stack Development -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    <h3>Full Stack</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">HTML5 & CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Django</span>
+                    <span class="skill-badge">Flask REST APIs</span>
+                    <span class="skill-badge">Backend Dev</span>
+                    <span class="skill-badge">Web Application Dev</span>
+                </div>
+            </div>
+
+            <!-- AI Technologies -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <h3>AI & ML</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">Machine Learning</span>
+                    <span class="skill-badge">Deep Learning</span>
+                    <span class="skill-badge">NLP</span>
+                    <span class="skill-badge">LLMs</span>
+                    <span class="skill-badge">Computer Vision</span>
+                    <span class="skill-badge">Prompt Engineering</span>
+                    <span class="skill-badge">RAG</span>
+                    <span class="skill-badge">Vector Databases</span>
+                </div>
+            </div>
+
+            <!-- Databases & Tools -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    <h3>Data & Databases</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Excel</span>
+                </div>
+            </div>
+
+            <!-- Analytics & Visualization -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <h3>Analytics</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">MS Excel</span>
+                    <span class="skill-badge">PowerPoint</span>
+                    <span class="skill-badge">Google Sheets</span>
+                </div>
+            </div>
+
+            <!-- CS Fundamentals & Platforms -->
+            <div class="glass-card skill-category">
+                <div class="skill-header">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <h3>Platforms & CS</h3>
+                </div>
+                <div class="skill-list">
+                    <span class="skill-badge">Git & GitHub</span>
+                    <span class="skill-badge">VS Code</span>
+                    <span class="skill-badge">Google Colab</span>
+                    <span class="skill-badge">Jupyter Notebook</span>
+                    <span class="skill-badge">Data Structures</span>
+                    <span class="skill-badge">OOPs</span>
+                    <span class="skill-badge">DBMS & OS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="section-header">
+            <span class="section-mono">05. Verified Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="certifications-grid">
+            <!-- AWS -->
+            <div class="glass-card cert-card">
+                <svg class="cert-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <h3 class="cert-title">Machine Learning Foundations</h3>
+                <span class="cert-org">AWS Academy Graduate (Amazon Web Services)</span>
+                <div class="cert-meta">
+                    <span>Credential ID: AWS Academy</span>
+                    <span class="cert-date">May 2024</span>
+                </div>
+            </div>
+
+            <!-- Cisco -->
+            <div class="glass-card cert-card">
+                <svg class="cert-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <h3 class="cert-title">PCAP: Programming Essentials in Python</h3>
+                <span class="cert-org">Cisco Networking Academy (OpenEDG)</span>
+                <div class="cert-meta">
+                    <span>Verified Developer</span>
+                    <span class="cert-date">July 2023</span>
+                </div>
+            </div>
+
+            <!-- IBM -->
+            <div class="glass-card cert-card">
+                <svg class="cert-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <h3 class="cert-title">Python for Data Science (PY0101EN)</h3>
+                <span class="cert-org">IBM Developer Skills Network</span>
+                <div class="cert-meta">
+                    <span>IBM Certified</span>
+                    <span class="cert-date">August 2023</span>
+                </div>
+            </div>
+
+            <!-- Hexart -->
+            <div class="glass-card cert-card">
+                <svg class="cert-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <h3 class="cert-title">AI Foundation / AI Advanced</h3>
+                <span class="cert-org">Hexart.In (NASSCOM Foundation, Li2 Group, Hexagon)</span>
+                <div class="cert-meta">
+                    <span>Advanced Scholar</span>
+                    <span class="cert-date">September 2024</span>
+                </div>
+            </div>
+
+            <!-- Infosys -->
+            <div class="glass-card cert-card">
+                <svg class="cert-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <h3 class="cert-title">Natural Language Processing</h3>
+                <span class="cert-org">Infosys Springboard</span>
+                <div class="cert-meta">
+                    <span>NLP Specialist</span>
+                    <span class="cert-date">October 2025</span>
+                </div>
+            </div>
+        </div>
+        <div class="linkedin-prompt-container">
+            <p>
+                Want to see more? View my additional verified certifications and projects on my <a href="https://linkedin.com/in/samaneti-ashwini" target="_blank">LinkedIn Profile</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops">
+        <div class="section-header">
+            <span class="section-mono">06. Events & Co-Curricular</span>
+            <h2 class="section-title">Workshops & Events</h2>
+        </div>
+        <div class="workshops-grid">
+            <!-- SIH -->
+            <div class="glass-card workshop-card">
+                <span class="workshop-badge">Hackathon</span>
+                <h3 class="workshop-title">Smart India Hackathon (SIH)</h3>
+                <p class="workshop-desc">
+                    Participated in the National Level Innovation Program, contributing to developing a "Real-Time Vehicle Tracking System" under the Government of Himachal Pradesh, focusing on the Theme: Smart Vehicles.
+                </p>
+                <span class="workshop-date">September 2023</span>
+            </div>
+
+            <!-- NIT Warangal -->
+            <div class="glass-card workshop-card">
+                <span class="workshop-badge">National Program</span>
+                <h3 class="workshop-title">NIT Warangal AI/ML</h3>
+                <p class="workshop-desc">
+                    Attended intensive, advanced academic and hands-on sessions on Artificial Intelligence, Machine Learning, Deep Learning models, and their industrial/practical applications.
+                </p>
+                <span class="workshop-date">October 2023</span>
+            </div>
+
+            <!-- Hexart -->
+            <div class="glass-card workshop-card">
+                <span class="workshop-badge">Advanced Training</span>
+                <h3 class="workshop-title">Hexart.In AI Program</h3>
+                <p class="workshop-desc">
+                    Participated in advanced sessions exploring contemporary developments in AI, neural networks, machine learning algorithms, and real-world system implementations.
+                </p>
+                <span class="workshop-date">September 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-mono">07. Connect With Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p class="contact-message">
+                    I'm currently seeking software engineering opportunities where I can apply my background in Full Stack development and AI. Feel free to reach out via email, phone, or check out my profiles online!
+                </p>
+                <div class="contact-details">
+                    <!-- Email -->
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:ashwinisamaneti@gmail.com" class="contact-value">ashwinisamaneti@gmail.com</a>
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Call / WhatsApp</span>
+                            <a href="tel:+918688807475" class="contact-value">+91 8688807475</a>
+                        </div>
+                    </div>
+                    <!-- Location -->
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Hyderabad, Telangana - India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="socials-wrapper">
+                    <!-- GitHub -->
+                    <a href="https://github.com/SamanetiAshwini" target="_blank" class="social-btn" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/samaneti-ashwini" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Interactive Client Contact Form -->
+            <div class="glass-card">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Hey Ashwini, I'd love to connect!"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#hero" class="footer-logo">SA<span>.</span></a>
+            <p class="footer-text">&copy; 2026 Samaneti Ashwini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="cert-modal">
+        <span class="close-modal">&times;</span>
+        <img class="cert-modal-content" id="img-modal-target" src="{% static 'projects/images/cigai_certificate.jpg' %}" alt="CIGAI 2026 Certificate" />
+        <div id="modal-caption">CIGAI 2026 International Conference Presentation Certificate</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'projects/js/main.js' %}"></script>
+</body>
+
+</html>
